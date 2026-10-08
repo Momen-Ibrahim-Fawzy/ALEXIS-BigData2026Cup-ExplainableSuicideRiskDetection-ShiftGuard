@@ -42,26 +42,23 @@ bundled here.
 ## Repository structure
 
 ```
-code/
-  subtask_1a_risk_classification/
-    config.py, dataset.py, model.py, train.py, predict.py   -- baseline pipeline
-    experiments/
-      trainer.py, experiment_config.py                       -- main training harness
-      (all Sub1a experiment, diagnostic, and analysis scripts described in the report)
-  subtask_1b_evidence_extraction/
-    config.py, dataset.py, model.py, crf.py, train.py, predict.py
-    predict_ensemble_1b.py   -- N-way checkpoint ensemble (used for the retained v37 composition)
-    (composition search/build scripts, diagnostic and analysis scripts)
-  subtask_2_factor_identification/
-    config.py, dataset_nli_finetune.py, model_nli_finetune.py
-    train_nli_finetune_kfold.py, predict_nli_finetune_kfold.py   -- production pipeline (LP-FT NLI cross-encoder)
-    (all other tried architectures -- GCN, dual-encoder, contrastive NLI, chain models,
-     seed-bagging, alternate NLI checkpoints -- included for transparency; none of these
-     were used in the retained submission, see the report's Section on Subtask 2)
-  requirements.txt
-  README.md   -- this file
-report/
-  paper.tex   -- IEEE conference report source (see report/README.md to compile)
+subtask_1a_risk_classification/
+  config.py, dataset.py, model.py, train.py, predict.py   -- baseline pipeline
+  experiments/
+    trainer.py, experiment_config.py                       -- main training harness
+    (all Sub1a experiment, diagnostic, and analysis scripts described in the report)
+subtask_1b_evidence_extraction/
+  config.py, dataset.py, model.py, crf.py, train.py, predict.py
+  predict_ensemble_1b.py   -- N-way checkpoint ensemble (used for the retained v37 composition)
+  (composition search/build scripts, diagnostic and analysis scripts)
+subtask_2_factor_identification/
+  config.py, dataset_nli_finetune.py, model_nli_finetune.py
+  train_nli_finetune_kfold.py, predict_nli_finetune_kfold.py   -- production pipeline (LP-FT NLI cross-encoder)
+  (all other tried architectures -- GCN, dual-encoder, contrastive NLI, chain models,
+   seed-bagging, alternate NLI checkpoints -- included for transparency; none of these
+   were used in the retained submission, see the report's Section on Subtask 2)
+requirements.txt
+README.md   -- this file
 ```
 
 ## Setup (Linux, Windows, or macOS)
