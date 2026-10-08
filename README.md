@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/ALEXIS_Logo.png" alt="ALEXIS team logo" width="170"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/AI-Moment.png" alt="AI Moment" width="220"/>
+</p>
+
 # ALEXIS — ShiftGuard: IEEE BigData 2026 Cup, Explainable Suicide Risk Detection
 
 Source code accompanying our team report (`../report/paper.pdf`, or compile
